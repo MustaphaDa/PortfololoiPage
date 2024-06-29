@@ -37,7 +37,7 @@ def contact():
         return redirect(url_for('contact'))
     return render_template('contact.html', form=form)
 
-@app.route('/home')
+@app.route('/')
 def home():
     return render_template('home.html')
 
